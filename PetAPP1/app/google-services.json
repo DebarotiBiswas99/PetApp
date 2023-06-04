@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "348240818267",
+    "project_id": "petapp-39530",
+    "storage_bucket": "petapp-39530.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348240818267:android:4a93595ee8e503a02ecf7e",
+        "android_client_info": {
+          "package_name": "com.example.petapp.ui.home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348240818267-obv7g4tf7km1hg6n6s033o3776nf40pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVcv7CSCdzZzSggvpHINGyOxJU9L5Z50E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348240818267-obv7g4tf7km1hg6n6s033o3776nf40pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348240818267:android:99191cbc0a8af0d62ecf7e",
+        "android_client_info": {
+          "package_name": "com.example.petapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348240818267-obv7g4tf7km1hg6n6s033o3776nf40pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVcv7CSCdzZzSggvpHINGyOxJU9L5Z50E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348240818267-obv7g4tf7km1hg6n6s033o3776nf40pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

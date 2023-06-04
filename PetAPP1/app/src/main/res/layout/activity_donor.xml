@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorActivity"
+
+    android:background="#0a7df4">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="0dp"
+        android:layout_height="650dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45999998">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:gravity="center"
+                    android:text="Pet Details"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.031" />
+
+                <Spinner
+                    android:id="@+id/donor_pettype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/donor_pettype">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_breed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Breed"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Age"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Weight (in kg)"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/donor_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintBottom_toTopOf="@+id/donor_bloodgroup"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+                <Spinner
+                    android:id="@+id/donor_bloodgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/donor_gender" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center"
+                    android:text="Owner Details"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/donor_bloodgroup"
+                    app:layout_constraintEnd_toEndOf="@+id/donor_bloodgroup"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/donor_bloodgroup"
+                    app:layout_constraintTop_toTopOf="@+id/donor_bloodgroup"
+                    app:layout_constraintVertical_bias="0.031" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_ownername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name of owner"
+                        android:inputType="textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout7"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout7"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone No."
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout8"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout8"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout8"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout9"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout9"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout10"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout10"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout10"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout11"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout11"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout11"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Country"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textInputLayout12"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout12"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout12"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donor_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pincode"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/donorapply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/custom_button2"
+                    android:gravity="center"
+                    android:text="Apply"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout13"
+                    app:layout_constraintVertical_bias="0.168" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
